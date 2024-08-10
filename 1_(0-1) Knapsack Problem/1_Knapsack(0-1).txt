@@ -1,3 +1,5 @@
+// Coding Ninja problem statement
+
 Problem statement
 A thief is robbing a store and can carry a maximal weight of W into his knapsack.
  There are N items and the ith item weighs wi and is of value vi. 
