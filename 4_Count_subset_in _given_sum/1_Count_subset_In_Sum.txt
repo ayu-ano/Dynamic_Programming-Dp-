@@ -1,6 +1,6 @@
 
-GFG
-Perfect Sum Problem
+Coding Ninjas(Count Subsets with Sum K), GFG(Perfect Sum Problem)
+
 
 
 Given an array arr of size n of non-negative integers and an integer sum,
