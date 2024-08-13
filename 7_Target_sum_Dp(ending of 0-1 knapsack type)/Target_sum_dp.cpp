@@ -53,7 +53,7 @@ int main() {
     int n = arr.size();
     
     long long result = sol.findTargetSumWays(n, arr, d);
-    cout << "The number of ways to partition the array with target difference " << d << " is: " << result << endl;
+    cout << "The number of  ways to partition the array with target difference " << d << " is: " << result << endl;
     
     return 0;
 }

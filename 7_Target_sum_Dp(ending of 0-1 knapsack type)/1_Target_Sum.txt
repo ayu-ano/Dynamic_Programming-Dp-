@@ -1,4 +1,4 @@
-Qn. GFG (Target Sum)
+Qn. GFG (Target Sum) and Coding NInjas 
 
 
 Given an array of integers A[] of length N and an integer target.
