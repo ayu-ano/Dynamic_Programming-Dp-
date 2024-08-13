@@ -1,5 +1,5 @@
 
-Coding Ninjas(Count Subsets with Sum K), GFG(Perfect Sum Problem)
+Coding Ninjas(Count Subsets with Sum K),      GFG(Perfect Sum Problem)
 
 
 
