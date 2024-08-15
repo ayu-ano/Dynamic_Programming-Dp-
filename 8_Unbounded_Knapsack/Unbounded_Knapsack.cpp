@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 int unboundedKnapsack(int N, int W, vector<int> &val, vector<int> &wt) {
