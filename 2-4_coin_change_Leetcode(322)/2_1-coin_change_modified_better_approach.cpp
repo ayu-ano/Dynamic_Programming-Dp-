@@ -12,7 +12,16 @@ public:
         for (int i = 0; i <= N; i++) {
             dp[i][0] = 0;
         }
+       
 
+         cout<< "Before DP fill up "<<endl;
+        for (int i = 0; i <= N; i++) {
+        for (int j = 0; j <= sum; j++){
+          cout<< dp[i][j] << " ";
+        }
+        cout<<endl;
+         cout<<endl;
+        }
         for (int j = 1; j <= sum; j++) {
             if (j % coins[0] == 0) {
                 dp[1][j] = j / coins[0];
@@ -31,6 +40,16 @@ public:
                     dp[i][j] = dp[i - 1][j];
                 }
             }
+        }
+
+
+          cout<< "After DP fill up "<<endl;
+        for (int i = 0; i <= N; i++) {
+        for (int j = 0; j <= sum; j++){
+          cout<< dp[i][j] << " ";
+        }
+        cout<<endl;
+         cout<<endl;
         }
 
         return dp[N][sum] == INT_MAX - 1 ? -1 : dp[N][sum];
