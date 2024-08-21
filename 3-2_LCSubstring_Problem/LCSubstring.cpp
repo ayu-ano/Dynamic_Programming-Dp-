@@ -14,6 +14,15 @@ class Solution {
         // Create a 2D DP array to store the length of LCS for subproblems
         vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));
 
+          cout<< "Before DP fill up "<<endl;
+        for (int i = 0; i <= n; i++) {
+        for (int j = 0; j <= m; j++){
+          cout<< dp[i][j] << " ";
+        }
+        cout<<endl;
+         cout<<endl;
+        }
+
         int maxLength = 0; // Variable to store the maximum length of common substring
 
         // Fill the DP table
@@ -28,6 +37,15 @@ class Solution {
                     dp[i][j] = 0;
                 }
             }
+        }
+
+          cout<< "After DP fill up "<<endl;
+        for (int i = 0; i <= n; i++) {
+        for (int j = 0; j <= m; j++){
+          cout<< dp[i][j] << " ";
+        }
+        cout<<endl;
+         cout<<endl;
         }
 
         // Return the maximum length of the common substring
