@@ -12,6 +12,14 @@ int cutRod(vector<int> &price, int n) {
     // Create a DP table with dimensions (n+1) x (n+1)
     vector<vector<int>> dp(n+1, vector<int>(n+1, 0));
 
+    cout<< "BEFORE DP fill up "<<endl;
+        for (int i = 0; i <= n; i++) {
+        for (int j = 0; j <= n; j++){
+          cout<< dp[i][j]<<" ";
+        }
+        cout<<endl;
+        }
+   
     // Fill the DP table
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= n; j++) {
@@ -23,13 +31,25 @@ int cutRod(vector<int> &price, int n) {
         }
     }
 
+      cout<< "After DP fill up "<<endl;
+        for (int i = 0; i <= n; i++) {
+        for (int j = 0; j <= n; j++){
+          cout<< dp[i][j] << " ";
+        }
+        cout<<endl;
+        }
+   
+
     return dp[n][n]; // The maximum profit is stored in dp[n][n]
 }
 
 int main() {
     // Hard-coded values
-    int n = 8; // Length of the rod
-    vector<int> price = {1, 5, 8, 9, 10, 17, 17, 20}; // Prices for each length
+    // int n = 8; // Length of the rod
+    // vector<int> price = {1, 5, 8, 9, 10, 17, 17, 20}; // Prices for each length
+
+        int n = 4; // Length of the rod
+    vector<int> price = {1, 5, 8, 9};
 
     // Call the cutRod function
     int maxProfit = cutRod(price, n);

@@ -15,6 +15,15 @@ public:
         // Create a 2D DP array to store the length of LCS for subproblems
         vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));
 
+          cout<< "Before DP fill up "<<endl;
+        for (int i = 0; i <= n; i++) {
+        for (int j = 0; j <= n; j++){
+          cout<< dp[i][j] << " ";
+        }
+        cout<<endl;
+         cout<<endl;
+        }
+
         // Fill the DP table
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= m; j++) {
@@ -30,6 +39,14 @@ public:
 
         // // The final value at dp[n][m] will be the length of the longest common subsequence
         // return dp[n][m];
+
+          cout<< "After DP fill up "<<endl;
+        for (int i = 0; i <= n; i++) {
+        for (int j = 0; j <= n; j++){
+          cout<< dp[i][j] << " ";
+        }
+        cout<<endl;
+        }
 
         int i=n;
         int j =m;
