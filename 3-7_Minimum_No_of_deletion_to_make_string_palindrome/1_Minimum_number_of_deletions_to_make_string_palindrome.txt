@@ -1,5 +1,6 @@
 
-GFGs and Leetcode(Minimum_Insertion_Steps_to_Make_a_String_Palindrome)
+GFGs and Coding Ninjas(medium level)
+ Leetcode(Minimum_Insertion_Steps_to_Make_a_String_Palindrome)--> HARd
 
 Given a string 'str' of size ‘n’. The task is to remove or delete the
  minimum number of characters from the string so that the resultant string is a palindrome. 
