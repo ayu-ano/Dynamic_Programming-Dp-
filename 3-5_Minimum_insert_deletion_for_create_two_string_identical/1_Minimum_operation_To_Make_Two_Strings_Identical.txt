@@ -1,5 +1,6 @@
 
-GFG,coding Ninjas
+GFG,coding Ninjas(Minimum Number of Deletions and Insertions)
+ Leetcode(Delete Operation for Two Strings)
 
 
 problem Statement :
