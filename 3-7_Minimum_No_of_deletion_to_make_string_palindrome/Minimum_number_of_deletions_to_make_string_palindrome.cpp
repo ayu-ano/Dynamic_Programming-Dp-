@@ -52,3 +52,6 @@ int main() {
 
     return 0;
 }
+
+
+// Note    (minimum no. of  insertion == minimum no. of deletion) core idea
