@@ -1,6 +1,6 @@
 
 
-GFG, LEETCODE,Coding Ninjas
+GFG only
 
 Problem Statement :
 
