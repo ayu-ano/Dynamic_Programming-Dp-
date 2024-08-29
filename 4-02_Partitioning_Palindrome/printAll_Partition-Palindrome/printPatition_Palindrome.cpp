@@ -44,7 +44,7 @@ vector<vector<string>> partition(string &s) {
 
 int main() {
     // Hardcoded test case
-    string str = "aab";
+    string str = "ababbbabbababa";
 
     // Get all partitions
     vector<vector<string>> partitions = partition(str);
@@ -58,5 +58,10 @@ int main() {
         cout << endl;
     }
 
+
+
+    string str1 = "geeks";
+
+    
     return 0;
 }
