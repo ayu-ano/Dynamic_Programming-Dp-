@@ -8,9 +8,13 @@ using namespace std;
     Where 'N' is the length of string.
 */
 
-#define mod 1000000007
+#define mod 1000000007;
 
-vector < vector < vector < long long int >>> memo;
+// alternative way
+// vector < vector < vector < long long int >>> memo;
+
+// simple way
+int memo[1001][1001][2];
 
 int Evaluate_Expression_To_True(string & exp, int i, int j, int isTrue) {
     // Corner Cases.
@@ -102,8 +106,15 @@ int evaluateExp(string & exp) {
     int n = exp.size();
 
     // We need to evaluate the whole expression for true.
-    memo = vector < vector < vector < long long int >>> (n, vector < vector < long long int >> 
-        (n, vector < long long int > (2, -1)));
+
+    //  if we define vector then we use this for   alternative way initialisation
+
+    // memo = vector < vector < vector < long long int >>> (n, vector < vector < long long int >> 
+    //     (n, vector < long long int > (2, -1)));
+
+     
+     // simple way of initialisation
+      memset(memo,-1,sizeof(memo));
     
     return Evaluate_Expression_To_True(exp, 0, n - 1, 1);
 }
